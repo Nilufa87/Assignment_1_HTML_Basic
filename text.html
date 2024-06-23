@@ -19,6 +19,8 @@
         body{
             background-color: bisque;
             font-family: "Open Sans", sans-serif;
+            font-size: 20;
+            height: 2rem;
         }
     </style>
 </head>
@@ -82,7 +84,7 @@
         </tbody>
             
         </table>
-        <h3>Skill Progress</h3>
+        <h2>Skill Progress</h2>
         <div>
             <label for="htmlProgress">HTML:</label>
         <progress id="htmlProgress" value="80" max="100">80%</progress>
@@ -105,7 +107,7 @@
         </div>
 
         <div>
-            <h3>Experiance Label</h3>
+            <h2>Experiance Label</h2>
             <label for="ExperianceLavel">Experiance:</label>
             <meter id="ExperianceLavel" min="0" max="10" value="2">2 years</meter>
         </div>
@@ -116,7 +118,7 @@
    <!--PROJECTS SECTION-->
   <head>
     <section id="My Projects">
-        <h1> <strong>My Projects</strong></h1>
+        <h2> <strong>My Projects</strong></h2>
        <ul>
         
         <li><a href="https://github.com/Nilufa87/Assignment-1-by-programming-hero">Portfoli</a></li>
@@ -193,33 +195,57 @@
    <!--CONTACT SECTION-->
    <head>
     <section id="Contact Me">
-        <h1> <strong>Contact Me</strong></h1>
+        <h2> <strong>Contact Me</strong></h2>
         <form action="https://formspree.io/f/mayrrpdq"
         method="POST">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div>
+                    <label for="name">Name:</label>
+                <input type="text" id="name" name="name"  required/>
+            </div>
             <div>
-                <label for="">Name:</label>
-            <input type="text" id="name" name="name"  required/>
-        </div>
-            <div>
-                <label for="">Email:</label>
+                <label for="email">Email:</label>
         <input type="email" id="email" Email="email"  required/>
             </div>
             <div>
-                <label for="">Number:</label>
+                <label for="age">Age:</label>
+            <input type="number" id="age" number="age"  min="18" max="60" required/>
+            </div>
+            </fieldset>
+        <div>
+            <label for="experiance">Number of years learning web development:</label>
+        <input type="range" id="experiance" name="experiance" min="0" max="10" value="2" required/>
+    </div>
+    <div>
+        <label for="programe">Favorite programe language:</label>
+    <input list="language" id="programe" name="programe"  required/>
+
+    <datalist id="language">
+        <option value="C"></option>
+        <option value="C++"></option>
+        <option value="Java"></option>
+        <option value="Javascript"></option>
+    </datalist>
+</div>
+        <div>
+            <label for="favorite">Favorite color:</label>
+        <input type="color" id="favorite" name="favorite" value="#f00000" required/>
+    </div>
+            
+            <div>
+                <label for="number">Number:</label>
             <input type="number" id="number" number="number" required/>
             </div>
             <div>
-                <label for="">Message:</label>
+                <label for="Message">Message:</label>
             <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
             </div>
             <div>
                 <label for="password">Password:</label>
             <input type="password" id="password" number="password" required/>
             </div>
-            <div>
-                <label for="age">Age:</label>
-            <input type="number" id="age" number="age"  min="18" max="60" required/>
-            </div>
+            
             <div>
                 <label for="website">Website:</label>
                 <input type="url" id="website" name="website" pattern="https?://.+"/>
@@ -227,10 +253,6 @@
             <div>
                 <label for="image">Upload image:</label>
                 <input type="file" id="image" name="image" accept="image/*"/>
-            </div>
-            <div>
-                <label for="radio">Radio:</label>
-            <input type="radio" id="radio" number="radio" />
             </div>
             <div>
                 <label for="radio">Radio:</label>
