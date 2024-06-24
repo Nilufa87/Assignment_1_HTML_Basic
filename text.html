@@ -15,39 +15,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <style>
-        body{
-            background-color: bisque;
-            font-family: "Open Sans", sans-serif;
-            font-size: 20;
-            height: 2rem;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav>
-        <ul>
-           <li><a href="#Introduction">Introduction</a></li> 
-           <li><a href="#Skills & Expertise">Skills & Expertise</a></li>
-           <li><a href="#My Projects"> My Projects</a></li>
-           <li><a href="#Education Qualification">Education Qualification </a></li>
-           <li><a href="#Contact Me">Contact Me</a></li>
-        </ul>
-        
-    </nav>
+<header>
+    <body>
+        <nav>
+            <ul>
+               <li><a href="#Introduction">Introduction</a></li> 
+               <li><a href="#Skills & Expertise">Skills & Expertise</a></li>
+               <li><a href="#My Projects"> My Projects</a></li>
+               <li><a href="#Education Qualification">Education Qualification </a></li>
+               <li><a href="#Contact Me">Contact Me</a></li>
+            </ul>
+            
+        </nav>
+</header>
+
     <!--INTRODUCTION SECTION-->
   <head>
     <section id="Introduction">
-        <h1> <strong>Introduction</strong></h1>
+        <div class="card">
+            <h1> <strong>Introduction</strong></h1>
         <em>My Name is Nilufa Akter Boishakhi.</em>
         <p>I am a student.I am studying at Pabna University of Science and Tecnology Department of Information and Communication Engineering.<br/>
             I am bigeneer of Web Development.I want to be a good Web Develoloper that's why i continously learning.</p>
         <img src="profile.jpg" alt="profile picture" height="200"/>
+        </div>
        </section>
   </head>
    <!--SKILL SECTION-->
    <head>
-    <section id="Skills & Expertise">
+    <section id="Skills & Expertise" class="card">
         <h1> <strong>Skills & Expertise</strong></h1>
         <table border="1" cellpadding="5" cellspacing="0">
         <thead>
@@ -117,7 +115,7 @@
 
    <!--PROJECTS SECTION-->
   <head>
-    <section id="My Projects">
+    <section id="My Projects" class="card">
         <h2> <strong>My Projects</strong></h2>
        <ul>
         
@@ -131,7 +129,7 @@
 
    <!--EDUCATION SECTION-->
   <head>
-    <section id="Education Qualification">
+    <section id="Education Qualification" class="card">
         <h1> <strong>Education Qualification</strong></h1>
         <table border="1" cellpadding="5" cellspacing="0">
             <thead>
@@ -180,7 +178,7 @@
        </section>
   </head>
 
-<div>
+<div class="card">
     <h2>Video Section</h2>
     <video width="320" controls>
         <source src="./assests/song.mp4" type="video/mp4" />
@@ -194,7 +192,7 @@
 
    <!--CONTACT SECTION-->
    <head>
-    <section id="Contact Me">
+    <section id="Contact Me" class="card">
         <h2> <strong>Contact Me</strong></h2>
         <form action="https://formspree.io/f/mayrrpdq"
         method="POST">
@@ -286,14 +284,17 @@
     
    
         <!--footer-->
-        <head>
-            <section>
-                <footer>
-                 <div>
+        <footer>
+            <section class="card">
+                
+                 <div >
                     <p> Copyright reserved by @Copy; Nilufa Akter2024</p>
                     <a href="01*********">Call Me</a>
                     <a href="nilufa87@yahoo.com">Email Me</a>
         
+                 </div>
+                 <div class="social-media">
+                    
                     <ul>
                         <li>
                            <a href="https://www.facebook.com/nilufaakter.boishakhi" target="_blank">
@@ -326,11 +327,11 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116526.87126097757!2d89.20712182343307!3d24.12031238190311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe825ecbaf4071%3A0xb3ccc3cd149f2643!2sAtgharia%20Upazila!5e0!3m2!1sen!2sbd!4v1718422149274!5m2!1sen!2sbd" title="home direction" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                  
                 </div>
-                </footer>
+                
                 
             </section>
         
-        </head>
+        </footer>
         
       
    
@@ -379,4 +380,3 @@
 
 
 
-]\[sa]
